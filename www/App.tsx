@@ -1,6 +1,6 @@
-import React, { useState } from "https://esm.sh/react@18";
-import { dialog } from "https://esm.sh/@tauri-apps/api";
-import { tw } from 'https://cdn.skypack.dev/twind'
+import React, { useEffect, useState } from "https://esm.sh/react@18.2.0";
+import { dialog } from "https://esm.sh/@tauri-apps/api@1.5.2";
+import { tw } from 'https://cdn.skypack.dev/twind@0.16.19'
 
 export default function App(){
 
