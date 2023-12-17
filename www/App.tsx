@@ -6,6 +6,15 @@ export default function App(){
 
     const [state, setState] = useState("Click the button!")
 
+    useEffect(() => {
+        /** https://esbuild.github.io/api/#live-reload */
+        const liveReload = new EventSource('/esbuild')
+        liveReload.addEventListener('change', () => location.reload())
+        return () => {
+            liveReload.close()
+        };
+      }, []);
+
     function askUser(){
         dialog.ask("Are you ok? :)", "Hey!").then((res: boolean) => {
             if(res){
