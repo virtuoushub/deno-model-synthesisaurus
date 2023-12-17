@@ -13,7 +13,13 @@ Prerequisites:
 - [Rust](https://www.rust-lang.org/)
 - [Deno](https://deno.land/)
 - [Tauri](https://tauri.app/v1/api/cli)
-- [Tauri os-specific dependencies](https://tauri.studio/v1/guides/getting-started/prerequisites#installing)
+- [Tauri os-specific dependencies](https://tauri.app/v1/guides/getting-started/prerequisites/#installing)
+
+---
+
+```sh
+cargo install tauri-cli
+```
 
 Development:
 ```shell
