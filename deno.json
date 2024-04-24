@@ -6,5 +6,9 @@
             "dom",
             "dom.iterable"
         ]
+    },
+    "lint": {
+        "include": ["www/"],
+        "exclude": ["www/dist/"]
     }
 }
