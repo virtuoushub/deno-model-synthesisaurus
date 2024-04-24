@@ -52,3 +52,27 @@ deno bench > "bench/deno_bench_$(date +'%s').log" --allow-sys=hostname
 ```sh
 deno test  --allow-sys=hostname
 ```
+
+--- 
+
+## gotchas
+
+### `Error failed to bundle project: error running bundle_dmg.sh`
+
+```sh
+...
+    Finished release [optimized] target(s) in 2m 04s
+    Bundling tauri-deno-starter.app (/Users/pc/dev/code/tauri-playground/deno-model-synthesisaurus/src-tauri/target/release/bundle/macos/tauri-deno-starter.app)
+    Bundling tauri-deno-starter_0.1.0_x64.dmg (/Users/pc/dev/code/tauri-playground/deno-model-synthesisaurus/src-tauri/target/release/bundle/dmg/tauri-deno-starter_0.1.0_x64.dmg)
+     Running bundle_dmg.sh
+       Error failed to bundle project: error running bundle_dmg.sh
+...
+```
+
+> This worked for me on macOS Sonoma:
+> 
+> Give Terminal.app the permissions to control Finder.app: Go to `System-Settings` -> `Privacy & Security` -> `Automation` There select `Terminal` and below enable the switch `Finder`.
+
+- https://github.com/tauri-apps/tauri/issues/3055#issuecomment-1866022065
+
+---
