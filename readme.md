@@ -42,3 +42,13 @@ Linting:
 deno lint www
 cargo clippy
 ```
+
+---
+
+```sh
+deno bench > "bench/deno_bench_$(date +'%s').log" --allow-sys=hostname
+```
+
+```sh
+deno test  --allow-sys=hostname
+```
