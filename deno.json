@@ -1,9 +1,14 @@
 {
     "compilerOptions": {
         "lib":[
+            "deno.ns",
             "ES2021",
             "dom",
             "dom.iterable"
         ]
+    },
+    "lint": {
+        "include": ["www/"],
+        "exclude": ["www/dist/"]
     }
 }
