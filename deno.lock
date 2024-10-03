@@ -2,6 +2,7 @@
   "version": "3",
   "redirects": {
     "https://esm.sh/v128/@types/react@~18.2/index.d.ts": "https://esm.sh/v128/@types/react@18.2.38/index.d.ts",
+    "https://esm.sh/v128/@types/react@~18.3/index.d.ts": "https://esm.sh/v128/@types/react@18.2.38/index.d.ts",
     "https://esm.sh/v135/@types/react-dom@~18.2/client~.d.ts": "https://esm.sh/v135/@types/react-dom@18.2.18/client~.d.ts"
   },
   "remote": {
@@ -232,9 +233,12 @@
     "https://deno.land/x/importmap@0.2.1/_util.ts": "ada9a9618b537e6c0316c048a898352396c882b9f2de38aba18fd3f2950ede89",
     "https://deno.land/x/importmap@0.2.1/mod.ts": "ae3d1cd7eabd18c01a4960d57db471126b020f23b37ef14e1359bbb949227ade",
     "https://esm.sh/@tauri-apps/api@1.5.2": "9b4ca9abe645eb1ab9acce15ea7a4f4c963aa2ad030b5916a9851f55c5f1b790",
+    "https://esm.sh/@tauri-apps/plugin-dialog@2.0.0": "514723ddc770ae2029d9b0c3b6e176696b615800d9c3d899a3f68ba6cae3faea",
     "https://esm.sh/react-dom@18.2.0/client": "391c0483ce063105b7d0422c653da70d52ac5f4efa02b0873ce8b70c4dc9ff61",
     "https://esm.sh/react@18.2.0": "8950a34a030620fce8349d6bd3913b3bdb186c5ec7968fa5ba4d054e22d78e6c",
+    "https://esm.sh/react@18.3.1": "52480d4c00855e4f76843caa4f2818eb001671523740cbf064cbd108721c29c8",
     "https://esm.sh/stable/react@18.2.0/denonext/react.mjs": "3c4f23bcfc53b256fcfaf6f834fa9f584c3bb7be667b2682c6cb6ba8ef88f8e6",
+    "https://esm.sh/stable/react@18.3.1/denonext/react.mjs": "fc048ffc55366baf7669519127d186761db72046e2bebf35fe8d0de3964defa3",
     "https://esm.sh/v135/@tauri-apps/api@1.5.2/denonext/api.mjs": "25ae8a89bfd0dbbb265f55d96b0f48e8fe3f045e1923535839f2493bb218f7d1",
     "https://esm.sh/v135/@tauri-apps/api@1.5.2/denonext/app.js": "2db0d5bbd2bf21171922b251f99aa5a42eab440286e81109eaebd517f9b4c3c4",
     "https://esm.sh/v135/@tauri-apps/api@1.5.2/denonext/cli.js": "c01e1cc17ce43f7c8128831f9b71bc587b5adde08e440a9bc5519a2aea2a9872",
