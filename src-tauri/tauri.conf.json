@@ -1,7 +1,7 @@
 {
   "build": {
-    "beforeBuildCommand": "deno run -A build.ts --lock=deno.lock --lock-write",
-    "beforeDevCommand": "deno run -A bundle.ts --lock=deno.lock --lock-write",
+    "beforeBuildCommand": "deno run --allow-env=DENO_REGISTRY_URL,ESBUILD_BINARY_PATH,HOME --allow-read=$HOME/Library/Caches/esbuild/bin --allow-run=$HOME/Library/Caches/esbuild/bin,$HOME/Library/Caches/esbuild/bin/@esbuild-darwin-x64@0.23.1 --allow-read=www --allow-net=esm.sh:443,cdn.skypack.dev:443 build.ts --lock=deno.lock --lock-write",
+    "beforeDevCommand": "deno run --allow-import=cdn.skypack.dev:443,deno.land:443 --allow-env=DENO_REGISTRY_URL,ESBUILD_BINARY_PATH,HOME,NPM_CONFIG_REGISTRY --allow-net=registry.npmjs.org:443,esm.sh:443,cdn.skypack.dev:443 --allow-write=$HOME/Library/Caches/esbuild/bin --allow-run=$HOME/Library/Caches/esbuild/bin,$HOME/Library/Caches/esbuild/bin/@esbuild-darwin-x64@0.23.1 --allow-read=$HOME/Library/Caches/esbuild/bin,www bundle.ts --lock=deno.lock --lock-write",
     "frontendDist": "../www",
     "devUrl": "http://localhost:3000"
   },
