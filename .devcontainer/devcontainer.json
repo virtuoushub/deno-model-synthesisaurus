@@ -18,8 +18,8 @@
 			"target": "/usr/local/cargo",
 			"type": "volume"
 		}
-	]
-
+	],
+	"initializeCommand": "cargo install tauri-cli"
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
