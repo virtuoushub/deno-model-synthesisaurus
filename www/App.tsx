@@ -28,6 +28,7 @@ export default function App() {
     <div className={tw`mx-10 my-5 `}>
       <h1 className={tw`text-xl`}>{state}</h1>
       <button
+        type='button'
         className={tw`my-2 px-3 py-2 rounded-lg bg-gray-900 text-white transition duration-150 ease-in-out`}
         onClick={askUser}
       >
