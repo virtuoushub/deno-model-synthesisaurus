@@ -17,6 +17,16 @@ Prerequisites:
 
 On Linux, make sure the native GTK/GLib development packages are installed. This project needs `libglib2.0-dev` for the `glib-sys` crate when building Tauri.
 
+For Debian/Ubuntu environments, install the Tauri prerequisites:
+
+```sh
+sudo apt-get update
+sudo apt-get install -y \
+  pkg-config build-essential curl wget file \
+  libglib2.0-dev libgtk-3-dev libwebkit2gtk-4.1-dev \
+  libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev
+```
+
 ---
 
 ```sh
