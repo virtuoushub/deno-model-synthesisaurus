@@ -15,6 +15,8 @@ Prerequisites:
 - [Tauri](https://tauri.app/v1/api/cli)
 - [Tauri os-specific dependencies](https://tauri.app/v1/guides/getting-started/prerequisites/#installing)
 
+On Linux, make sure the native GTK/GLib development packages are installed. This project needs `libglib2.0-dev` for the `glib-sys` crate when building Tauri.
+
 ---
 
 ```sh
