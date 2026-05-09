@@ -92,3 +92,20 @@ deno test  --allow-sys=hostname
 `libwebkit2gtk-4.1-dev `
 
 https://github.com/tauri-apps/tauri/issues/9662
+
+---
+
+https://v2.tauri.app/start/prerequisites/#linux
+
+```sh
+sudo apt update
+sudo apt install libwebkit2gtk-4.1-dev \
+  build-essential \
+  curl \
+  wget \
+  file \
+  libxdo-dev \
+  libssl-dev \
+  libayatana-appindicator3-dev \
+  librsvg2-dev
+```
