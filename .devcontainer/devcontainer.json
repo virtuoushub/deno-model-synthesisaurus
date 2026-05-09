@@ -10,6 +10,9 @@
 			"version": "latest"
 		}
 	},
+	"containerEnv": {
+		"DISPLAY": ":99"
+	},
 
 	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
 	"mounts": [
@@ -19,8 +22,14 @@
 			"type": "volume"
 		}
 	],
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev",
-	"onCreateCommand": "cargo install tauri-cli"
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev xvfb",
+	"postStartCommand": "bash -lc 'pgrep -x Xvfb >/dev/null || (nohup Xvfb :99 -screen 0 1280x720x24 >/tmp/xvfb.log 2>&1 &)'",
+	"onCreateCommand": "cargo install tauri-cli",
+	"portsAttributes": {
+		"3000": {
+			"label": "tauri dev"
+		}
+	}
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
