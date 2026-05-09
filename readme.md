@@ -88,3 +88,7 @@ deno test  --allow-sys=hostname
 - https://github.com/tauri-apps/tauri/issues/3055#issuecomment-1866022065
 
 ---
+
+`libwebkit2gtk-4.1-dev `
+
+https://github.com/tauri-apps/tauri/issues/9662
