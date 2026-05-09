@@ -48,7 +48,7 @@ cargo clippy
 ---
 
 ```sh
-deno bench > "bench/deno_bench_$(date +'%s').log" --allow-sys=hostname
+deno bench > "./bench/deno_bench_$(date +'%s').log" --allow-sys=hostname
 ```
 
 ```sh

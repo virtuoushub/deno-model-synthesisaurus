@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "https://esm.sh/react@18.3.1";
-import { ask } from "https://esm.sh/@tauri-apps/plugin-dialog@2.0.0";
-import { tw } from "https://cdn.skypack.dev/twind@0.16.19";
+import React, { useEffect, useState } from "react";
+import { ask } from "@tauri-apps/plugin-dialog";
+import { tw } from "twind";
 
 export default function App() {
   const [state, setState] = useState("Click the button!");
