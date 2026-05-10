@@ -38,6 +38,22 @@ Development:
 cargo tauri dev
 ```
 
+If you are in a headless Linux environment (CI/dev container/SSH) and see
+`Failed to initialize GTK`, there is no GUI display backend available.
+
+Use one of these options:
+
+```sh
+# Run with a virtual X server
+xvfb-run -a cargo tauri dev
+```
+
+```sh
+# Or forward your host display into the container/session
+export DISPLAY=:0
+cargo tauri dev
+```
+
 Building:
 ```shell
 cargo tauri build

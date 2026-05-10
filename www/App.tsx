@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { ask } from "@tauri-apps/plugin-dialog";
 import { tw } from "twind";
 
 export default function App() {
   const [state, setState] = useState("Click the button!");
+
+  const isTauriRuntime =
+    typeof window !== "undefined" &&
+    typeof (window as { __TAURI_INTERNALS__?: unknown }).__TAURI_INTERNALS__ !==
+      "undefined";
 
   useEffect(() => {
     /** https://esbuild.github.io/api/#live-reload */
@@ -14,14 +18,24 @@ export default function App() {
     };
   }, []);
 
-  function askUser() {
-    ask("Are you ok? :)", "Hey!").then((res: boolean) => {
+  async function askUser() {
+    try {
+      // Browser builds don't expose Tauri internals, so use a native fallback.
+      const res = isTauriRuntime
+        ? await (await import("@tauri-apps/plugin-dialog")).ask(
+            "Are you ok? :)",
+            "Hey!",
+          )
+        : window.confirm("Are you ok? :)");
+
       if (res) {
         setState("You are good!");
       } else {
         setState("You are not good D:");
       }
-    });
+    } catch {
+      setState("Dialog unavailable in this runtime.");
+    }
   }
 
   return (
