@@ -12,6 +12,8 @@
         "exclude": ["www/dist/"]
     },
     "imports": {
+        "esbuild": "https://deno.land/x/esbuild@v0.28.0/mod.js",
+        "esbuild_deno_loader/": "https://deno.land/x/esbuild_deno_loader@0.9.0/",
         "@tauri-apps/plugin-dialog": "npm:@tauri-apps/plugin-dialog@^2.7.1",
         "react": "npm:react@^19.2.6",
         "react/jsx-runtime": "npm:react@^19.2.6/jsx-runtime",
