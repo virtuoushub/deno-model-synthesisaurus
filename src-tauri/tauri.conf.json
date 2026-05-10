@@ -1,7 +1,7 @@
 {
   "build": {
-    "beforeBuildCommand": "env -u LD_LIBRARY_PATH deno run -A --lock --frozen=true build.ts",
-    "beforeDevCommand": "env -u LD_LIBRARY_PATH deno run -A --lock --frozen=true bundle.ts",
+    "beforeBuildCommand": "deno run -A --lock --frozen=true build.ts",
+    "beforeDevCommand": "deno run -A --lock --frozen=true bundle.ts",
     "frontendDist": "../www",
     "devUrl": "http://localhost:3000"
   },
