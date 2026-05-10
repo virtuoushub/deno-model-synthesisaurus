@@ -29,6 +29,14 @@
 		"3000": {
 			"label": "tauri dev"
 		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"denoland.vscode-deno",
+				"GitHub.copilot-chat"
+			]
+		}
 	}
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
