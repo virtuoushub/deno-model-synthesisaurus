@@ -33,12 +33,27 @@
                 "allow": ["DENO_DIR","DENO_REGISTRY_URL","ESBUILD_BINARY_PATH","XDG_CACHE_HOME","HOME","NPM_CONFIG_REGISTRY"]
             },
             "run": {
-                "allow": true,
-                "deny": []
+                "allow": []
             },
             "net": {
-                "allow": ["registry.npmjs.org:443"],
-                "deny": []
+                "allow": ["registry.npmjs.org:443"]
+            }
+        },
+        "build": {
+            "read": {
+                "allow": ["./deno.json","/home/vscode/.cache/esbuild/bin/@esbuild-linux-x64@0.28.0","./www/"]
+            },
+            "write": {
+                "allow": []  
+            },
+            "env": {
+                "allow": ["DENO_REGISTRY_URL","ESBUILD_BINARY_PATH","XDG_CACHE_HOME","HOME","DENO_DIR"]
+            },
+            "run": {
+                "allow": ["/home/vscode/.cache/esbuild/bin/@esbuild-linux-x64@0.28.0"]
+            },
+            "net": {
+                "allow": []
             }
         }
     }

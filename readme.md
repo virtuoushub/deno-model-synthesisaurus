@@ -133,3 +133,7 @@ sudo apt install libwebkit2gtk-4.1-dev \
 ```
 "$HOME/.cache/esbuild/bin",
 ```
+
+---
+
+`"beforeBuildCommand": "env -u LD_LIBRARY_PATH deno run -P=build --lock --frozen=true build.ts",`
