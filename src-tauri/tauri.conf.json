@@ -1,7 +1,7 @@
 {
   "build": {
     "beforeBuildCommand": "deno run -A --lock --frozen=true build.ts",
-    "beforeDevCommand": "deno run -A --lock --frozen=true bundle.ts",
+    "beforeDevCommand": "deno run -P --lock --frozen=true bundle.ts",
     "frontendDist": "../www",
     "devUrl": "http://localhost:3000"
   },

@@ -125,3 +125,11 @@ sudo apt install libwebkit2gtk-4.1-dev \
   libayatana-appindicator3-dev \
   librsvg2-dev
 ```
+
+---
+
+`deno.json`
+
+```
+"$HOME/.cache/esbuild/bin",
+```
